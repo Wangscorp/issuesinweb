@@ -3,52 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Edwin Wangsco | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="about">
-      <div class="profile">
-        <img
-          src="wangs.jpg"
-          alt="Your Photo"
-          style="
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-          "
-        />
-        <p><strong>Contact:</strong> +254725712668</p>
-        <p>
-          <strong>X:</strong>
-          <a href="https://x.com/Wangsco" target="_blank">@Wangsco</a>
-        </p>
-      </div>
-    </section>
+    <header>
+      <h1>Edwin Wangsco</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Local Farm Online</h3>
-          <p>
-            A blockchain-based platform connecting local farmers directly with
-            consumers, ensuring transparency and fair pricing. Built on ICP
-            (Internet Computer Protocol) and smart contracts.
-          </p>
-          <a href="#" target="_blank">View Project</a>
+    <main class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="wangs.jpg" alt="Edwin Wangsco" class="profile-pic" />
+          <div>
+            <p><strong>Frontend Developer & Creative Technologist</strong></p>
+            <p>
+              Based in Kenya, passionate about building clean and functional
+              interfaces with modern technologies like HTML, CSS, JS, and ICP
+              tools.
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+254725712668">+254 725 712668</a>
+            </p>
+            <p>
+              <strong>X:</strong>
+              <a href="https://x.com/Wangsco" target="_blank">@Wangsco</a>
+            </p>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Students Aid App for Fundraising</h3>
-          <p>
-            A decentralized fundraising app that helps students raise funds
-            securely using ICP blockchain technology. Utilizes Motoko and ICP
-            canisters.
-          </p>
-          <a href="#" target="_blank">View Project</a>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Local Farm Online</h3>
+            <p>
+              Blockchain-based platform connecting farmers with consumers. Built
+              with ICP and smart contracts.
+            </p>
+            <a href="#" class="btn" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Students Aid App</h3>
+            <p>
+              Decentralized fundraising app for students. Built using Motoko and
+              Internet Computer Canisters.
+            </p>
+            <a href="#" class="btn" target="_blank">View Project</a>
+          </div>
         </div>
-        <!-- Add more project cards as needed -->
-      </div>
-    </section>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Edwin Wangsco. Built with 💙 and clean code.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
