@@ -151,3 +151,46 @@ footer {
   background: var(--primary);
   color: var(--white);
 }
+
+/* Core grid and layout flexibility */
+.about-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-content img {
+  margin-bottom: 1rem;
+}
+
+/* Project grid: auto-fit ensures it adapts to screen size */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Contact form responsiveness */
+form input, form textarea {
+  width: 100%;
+}
+
+/* Add spacing and stacking for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
